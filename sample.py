@@ -32,7 +32,7 @@ for i in infos :
 
 
 ingredient = browser.find_element(By.CSS_SELECTOR, f'#artcInfo > dl.detail_info_list:nth-child({ingredientCnt + 1}) > dd')
-print("ingredient : ", ingredient.text)
+print("ingredients : ", ingredient.text)
 
 ingredientList = ingredient.text.replace(" " , "").split(',')
 for i in ingredientList :
